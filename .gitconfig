@@ -1,0 +1,33 @@
+[user]
+ name = Paul T. Bauman 
+ email = ptbauman@gmail.com
+
+[color]
+ diff = auto
+ status = auto
+ branch = auto
+ interactive = true
+
+[alias]
+ lg = log --graph --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%cD%C(reset) %C(bold green)(%cr)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(bold white)—%cn%C(reset)' --abbrev-commit
+ s = status
+ su = status -uno
+ d = diff
+
+[core]
+ pager = less -r
+[editor]
+ core = vim -c "set textwidth=72" -c "set fo+=t" -c "set wrap"
+[merge]
+# I've decided, for the moment, I don't like the diff3 style.
+# Leaving commented out in case I change my mind.
+# conflictstyle = diff3
+
+[push]
+ default = simple
+
+[credential]
+	helper = osxkeychain
+
+[branch]
+        autosetupmerge = always
